@@ -41,7 +41,7 @@ namespace CouchbaseDistributedCacheSample.Controllers
             }
             catch (Exception)
             {
-                //If key not awailable in Reids , Get error description from DB and set.
+                //If key not awailable in Couchbase , Get error description from DB and set.
                 var item = await _locationRepository.GetCities();
 
                 if (item != null)
